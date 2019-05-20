@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "YMESE Asana",
+  "short_name": "YMESE",
+  "version": "0.1",
+  "description": "Count points burned by each members.",
+  "content_scripts": [
+    {
+      "matches": ["https://app.asana.com/*"],
+      "js": ["jquery-3.4.1.min.js", "script.js"],
+      "css": ["style.css"],
+      "run_at": "document_end"
+    }
+  ]
+}
